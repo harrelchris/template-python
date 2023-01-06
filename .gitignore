@@ -1,6 +1,14 @@
 # Directories
+.data/
 .idea/
+.mypy_cache/
+.pytest_cache/
+.reports/
+.tox/
 .venv/
 __pycache__/
 
 # Files
+.coverage
+.env
+*.sqlite3
