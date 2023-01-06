@@ -1,1 +1,4 @@
-# template-python-application
+# Template Python Application
+
+Preconfigured template repository for Python applications.
+
