@@ -3,6 +3,7 @@
 Preconfigured template repository for Python applications.
 
 ![CI](https://github.com/harrelchris/template-python-application/actions/workflows/ci.yml/badge.svg)
+![MIT](https://img.shields.io/github/license/harrelchris/template-python-application)
 
 ## Requirements
 
