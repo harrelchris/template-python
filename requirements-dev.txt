@@ -1,7 +1,10 @@
 # Development dependencies
 -r requirements.txt
 
+Black
 Coverage
+Flake8
+MyPy
 Pre-Commit
 PyTest
 PyTest-HTML
