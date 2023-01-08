@@ -60,10 +60,6 @@ repos:
       - id: python-no-log-warn
       - id: python-use-type-annotations
       - id: text-unicode-replacement-char
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.16
-    hooks:
-      - id: mdformat
   - repo: https://github.com/asottile/add-trailing-comma
     rev: v2.2.3
     hooks:
