@@ -41,6 +41,12 @@ scripts\setup
 
 ## Testing
 
+Run pytest with coverage and generate reports for both
+
+```shell
+coverage erase && coverage run -m pytest --html=.reports/pytest/index.html --self-contained-html && coverage html
+```
+
 Use the `test` script to run Pytest and Coverage and generate reports for both, or run them individually as needed. Tox is also included to run your tests on multiple Python versions if you have them installed.
 
 #### Windows
@@ -72,9 +78,7 @@ A tool that measures how much of your code is executed during your tests. Aim fo
 [Documentation](https://coverage.readthedocs.io/)
 
 ```shell
-coverage erase
-coverage run -m pytest
-coverage html -d .reports/coverage --fail-under 100
+coverage erase && coverage run -m pytest && coverage html
 ```
 
 ### Tox
