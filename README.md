@@ -5,58 +5,98 @@ Preconfigured template repository for Python applications.
 ![CI](https://github.com/harrelchris/template-python-application/actions/workflows/ci.yml/badge.svg)
 ![MIT](https://img.shields.io/github/license/harrelchris/template-python-application)
 
-## Requirements
+## Quickstart
 
-1. [git](https://git-scm.com/downloads)
-1. [Python 3.7+](https://www.python.org/downloads/)
+### 1. Copy this repository
 
-## Usage
+Download or use as a template
 
-1. Copy this repository via zip or as a template.
+#### Download
 
-   1. Zip
+1. Create a project directory on your machine
+1. [Click here](https://github.com/harrelchris/template-python-application/archive/refs/heads/main.zip) to download the zip into the directory
+1. Unzip the zipped archive
+1. Delete the zipped archive
 
-      1. [Click here to download](https://github.com/harrelchris/template-python-application/archive/refs/heads/main.zip) this repository as a zip file.
-      1. Create a new project directory on your machine.
-      1. Unzip the repository into your project directory.
+#### Template
 
-   1. Template
+1. [Click here](https://github.com/harrelchris/template-python-application/generate) to create a repository using this template
+1. Clone your repository to your machine
 
-      1. [Use this template](https://github.com/harrelchris/template-python-application/generate) to create a new repository,
-      1. Clone the repository to your machine.
+### 2. Prepare your environment
 
-1. Run the dev setup script
+Run the `setup` script
 
-   ### Windows
+#### Windows
 
-   ```shell
-   scripts\dev
-   ```
+```shell
+scripts\setup
+```
 
-   ### Linux
+#### Linux
 
-   ```bash
-   ./scripts/dev.sh
-   ```
+```shell
+./scripts/setup
+```
 
-1. Write your application and tests
+## Testing
 
-1. Run the tests
+Use the `test` script to run Pytest and Coverage and generate reports for both, or run them individually as needed. Tox is also included to run your tests on multiple Python versions if you have them installed.
 
-   ### Windows
+#### Windows
 
-   ```shell
-   scripts\test
-   ```
+```shell
+scripts\test
+```
 
-   ### Linux
+#### Linux
 
-   ```bash
-   ./scripts/test.sh
-   ```
+```bash
+./scripts/test
+```
 
-   1. If you have multiple Python versions installed, you can run your tests on them using Tox:
+### Pytest
 
-   ```shell
-   tox
-   ```
+A test framework that makes it easy to write small, readable tests.
+
+[Documentation](https://docs.pytest.org/)
+
+```shell
+python -m pytest --html=.reports/pytest/index.html --self-contained-html
+```
+
+### Coverage
+
+A tool that measures how much of your code is executed during your tests. Aim for 100%.
+
+[Documentation](https://coverage.readthedocs.io/)
+
+```shell
+coverage erase
+coverage run -m pytest
+coverage html -d .reports/coverage --fail-under 100
+```
+
+### Tox
+
+Test runner that will run your test suite using multiple versions of Python if they are found on your machine.
+
+[Documentation]()
+
+```shell
+tox
+```
+
+## Code Quality
+
+Code quality is enforced using the pre-commit framework with a number of hooks.
+
+### Pre-Commit
+
+Run multiple code quality tools on git-staged code.
+
+[Documentation](https://pre-commit.com/)
+
+```shell
+pre-commit run --all-files
+```
