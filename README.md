@@ -81,7 +81,7 @@ coverage html -d .reports/coverage --fail-under 100
 
 Test runner that will run your test suite using multiple versions of Python if they are found on your machine.
 
-[Documentation]()
+[Documentation](https://tox.wiki/en/latest/)
 
 ```shell
 tox
