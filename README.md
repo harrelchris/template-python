@@ -36,7 +36,7 @@ scripts\setup
 #### Linux
 
 ```shell
-./scripts/setup
+bash scripts/setup
 ```
 
 ## Testing
@@ -58,7 +58,7 @@ scripts\test
 #### Linux
 
 ```bash
-./scripts/test
+bash scripts/test
 ```
 
 ### Pytest
