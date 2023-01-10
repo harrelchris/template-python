@@ -1,9 +1,9 @@
-# Template Python Application
+# Template Python
 
 Preconfigured template repository for Python applications.
 
-![CI](https://github.com/harrelchris/template-python-application/actions/workflows/ci.yml/badge.svg)
-![MIT](https://img.shields.io/github/license/harrelchris/template-python-application)
+![CI](https://github.com/harrelchris/template-python/actions/workflows/ci.yml/badge.svg)
+![MIT](https://img.shields.io/github/license/harrelchris/template-python)
 
 ## Quickstart
 
@@ -14,13 +14,13 @@ Download or use as a template
 #### Download
 
 1. Create a project directory on your machine
-1. [Click here](https://github.com/harrelchris/template-python-application/archive/refs/heads/main.zip) to download the zip into the directory
+1. [Click here](https://github.com/harrelchris/template-python/archive/refs/heads/main.zip) to download the zip into the directory
 1. Unzip the zipped archive
 1. Delete the zipped archive
 
 #### Template
 
-1. [Click here](https://github.com/harrelchris/template-python-application/generate) to create a repository using this template
+1. [Click here](https://github.com/harrelchris/template-python/generate) to create a repository using this template
 1. Clone your repository to your machine
 
 ### 2. Prepare your environment
